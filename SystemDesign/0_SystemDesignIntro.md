@@ -1,4 +1,4 @@
-Steps(RIEDHDB) to follow during SDIs
+## Steps(RIEDHDB) to follow during SDIs
 
 * Requirement Classifications
 * System interface definitions
@@ -8,23 +8,29 @@ Steps(RIEDHDB) to follow during SDIs
 * Detailed Design
 * Identifying and Resolving Bottlenecks
 
-#### Estimation
+## Requirement Classifications
+
+* Functional requirements - Most Important Ones
+* Non Functional requirements - Latency, Availability, Eventual Consistency
+* Extended requirements - Search, etc
+
+### Estimation
 * Traffic Estimation (#write tps, #read tps for 2 major APIs)
 * Storage Estimation (#bytes for text, #image/videos storage)
 * Network Bandwidth Estimation (how to load balance)
 * Cache Estimation (80:20 rule)
 
-#### Data Model
+### Data Model
 Entities, Relationships, NoSQL vs SQL, Transportation, Encryption
 
-#### High Level Design
+### High Level Design
 Clients -> Load Balancer -> Application Servers -> Databases/File Storage
 
 * Storage for image/videos
 * Separate server for reads and writes?
 * DB should support huge number of reads?
 
-#### Detailed Design
+### Detailed Design
 Pros & Cons of different approaches keeping constraints in mind
 
 * Partition our data to distribute it to multiple databases?
@@ -33,7 +39,7 @@ Pros & Cons of different approaches keeping constraints in mind
 * When to introduce Cache?
 * Should we add load balancing for DB?
 
-#### Identifying Bottlenecks
+### Identifying Bottlenecks
 
 * Any single point of failure in our system?
 * Enough data replicas, enough node copies running?
