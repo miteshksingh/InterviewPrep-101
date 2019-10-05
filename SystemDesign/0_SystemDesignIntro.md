@@ -16,7 +16,7 @@
 
 ### Estimation
 * Traffic Estimation (#write tps, #read tps for 2 major APIs)
-* Storage Estimation (#bytes for text, #image/videos storage)
+* Storage Estimation (#bytes for text, #image/videos storage, storage need for next 5 years)
 * Network Bandwidth Estimation (how to load balance)
 * Cache Estimation (80:20 rule)
 
