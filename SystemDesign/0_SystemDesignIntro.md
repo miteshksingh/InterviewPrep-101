@@ -46,6 +46,8 @@ Pros & Cons of different approaches keeping constraints in mind
 * Store all data of a user on the same DB?
 * Handling hot users who tweet a lot?
 * When to introduce Cache?
+  * Have different servers for cache which will be queried by app servers
+  * Memcache
 * Should we add load balancing for DB?
 
 ### Identifying Bottlenecks
