@@ -45,7 +45,7 @@ Pros & Cons of different approaches keeping constraints in mind
   * Sharding by tweetid and tweet creation time
 * Store all data of a user on the same DB?
 * Handling hot users who tweet a lot?
-* When to introduce Cache?
+* When to introduce Cache (may be cache of hot tweets and users?)?
   * Have different servers for cache which will be queried by app servers
   * Memcache
 * Should we add load balancing for DB?
