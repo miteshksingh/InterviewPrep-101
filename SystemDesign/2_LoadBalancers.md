@@ -7,6 +7,8 @@ We can add LBs at 3 places
 2. Between the web server and an internal platform layer like application server or cache servers
 3. Between the internal platform layer and database
 
+Intelligent LBs should periodically query backend servers bout their health and load and send requests accordingly.
+
 ### Benefits of Load Balancing
 
 * Users - Experience faster(higher throuput) and uninteruppted(less downtime) service. Users won't have to wait for a single server to finish its previous tasks.
