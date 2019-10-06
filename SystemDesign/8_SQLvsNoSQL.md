@@ -6,6 +6,8 @@ Relational DB - MySQL, Oracle, SQLite, Postgres
 
 #### Key Value Stores
 Data is stored in an array of key-value pairs. Ex - Redis, DynamoDB
+Generally maintain a certain a number of replicas to offer reliability
+Deletes don't get applied instantly to support undeleting for certain days
 
 #### Document Databases
 Data is stored in documents. Group of documents is collections. Each document can have an entirely different structure.
