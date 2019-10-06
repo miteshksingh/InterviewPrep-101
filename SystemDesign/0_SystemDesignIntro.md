@@ -21,7 +21,9 @@
 * Cache Estimation (80:20 rule)
 
 ### Data Model
-Entities, Relationships, NoSQL vs SQL, Transportation, Encryption
+Entities, Relationships, NoSQL vs SQL, Transportation
+Which DB columns will have encryption?
+Which DB columns will have index?
 
 ### High Level Design
 Clients -> Load Balancer -> Application Servers -> Databases/File Storage
