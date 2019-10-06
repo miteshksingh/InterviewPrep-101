@@ -8,5 +8,8 @@
 Active Replication - Message goes to each node so always in sync
 Passive Replication - Master-slave architecture. Master receives updates and then it is rippled to slaves. Slaves acknowledge receiving and then get subsequent updates, thus eventually consistent.
 
+* Example - Designing Twitter
+Since our system is read heavy, we should replicate all DB shards to have a copy. So that when primary fails, secondary can takeover. During writes, first the primary server should be written and then the secondary server should get that update
+
 https://peterdaugaardrasmussen.com/2018/03/26/difference-between-redundancy-and-replication/
 
