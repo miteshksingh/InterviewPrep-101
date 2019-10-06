@@ -13,6 +13,8 @@ Assumption - Places will be evenly distributed across the different zip codes
 
 * Problems - Partitioning scheme may lead to unbalanced servers if the value whose range is used for partitioning has unbalanced data. Assumption is invalid. Manhattan has lots of places as compared to suburbs.
 
+* Horizontal partioning can be on a single system but multiple tables. But sharding happens across multiple systems, thus providing scalability.
+
 #### Vertical Partitioning
 * Store tables related to a specific feature in their own server.
 Example - Instagram - Profile info on o
