@@ -39,6 +39,10 @@ Clients -> Load Balancer -> Application Servers -> Databases/File Storage
 Pros & Cons of different approaches keeping constraints in mind
 
 * Partition our data to distribute it to multiple databases?
+  * Sharding by UserId? Problem of hot users
+  * Sharding by TweetId? Problem of querying all servers
+  * Sharding by tweet creation time? Problem of unbalanced load - only few servers will have all the load
+  * Sharding by tweetid and tweet creation time
 * Store all data of a user on the same DB?
 * Handling hot users who tweet a lot?
 * When to introduce Cache?
