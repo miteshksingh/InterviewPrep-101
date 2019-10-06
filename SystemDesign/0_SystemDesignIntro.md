@@ -21,14 +21,16 @@
 * Cache Estimation (80:20 rule)
 
 ### Data Model
-Entities, Relationships, NoSQL vs SQL, Transportation
+Entities, Relationships, NoSQL(key value store for reliability?)  vs SQL, Transportation
 Which DB columns will have encryption?
 Which DB columns will have index?
+
+Ex - Tweet, User, Account, UserFollow, Photo, UserPhoto
 
 ### High Level Design
 Clients -> Load Balancer -> Application Servers -> Databases/File Storage
 
-* Storage for image/videos
+* Storage for image/videos - Generally distributed filed storage HDFS/S3
 * Separate server for reads and writes?
 * DB should support huge number of reads?
 * Estimates per second are average numbers, we should always prep for more. Ex - 325K read tweets ~ 1M read tweets
