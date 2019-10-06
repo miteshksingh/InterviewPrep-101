@@ -61,6 +61,15 @@ Pros & Cons of different approaches keeping constraints in mind
 * Enough data replicas, enough node copies running?
 * How to monitor performance?
 
+### Monitoring
+
+* Collect metrics/counters like
+  * # tweets per/second, what's the daily peak?
+  * how many tweets per day are we delivering?
+  * Average latency for refresh timeline
+* This helps us in understanding if we need more LBs
+
+
 
 
 
