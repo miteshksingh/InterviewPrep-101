@@ -29,6 +29,7 @@ Clients -> Load Balancer -> Application Servers -> Databases/File Storage
 * Storage for image/videos
 * Separate server for reads and writes?
 * DB should support huge number of reads?
+* Estimates per second are average numbers, we should always prep for more. Ex - 325K read tweets ~ 1M read tweets
 
 ### Detailed Design
 Pros & Cons of different approaches keeping constraints in mind
