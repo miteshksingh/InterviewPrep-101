@@ -1,0 +1,6 @@
+## Serial Execution
+
+When programs are serially executed, they are scheduled one at a time on the CPU. Once a task gets completed, the next one gets a chance to run.
+Each task is run from the beginning to the end without interruption.
+
+Analogy - Its like a circus juggler who can only juggle one ball at a time
