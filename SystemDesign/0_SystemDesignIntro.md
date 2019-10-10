@@ -38,15 +38,6 @@ Clients -> Load Balancer -> Application Servers -> Databases/File Storage
 ### Detailed Design
 Pros & Cons of different approaches keeping constraints in mind
 
-
-## Types of System Design Questions
-1. Social Media Apps (Facebook, Insta, Twitter)
-2. Chat Apps (Whatsapp, Messenger)
-3. Streaming Apps (Youtube, Netflix)
-4. Location Apps (Restaurants, Movies, Events)
-
-
-
 * Partition our data to distribute it to multiple databases?
   * Sharding by UserId? Problem of hot users
   * Sharding by TweetId? Problem of querying all servers
@@ -77,6 +68,13 @@ Pros & Cons of different approaches keeping constraints in mind
   * how many tweets per day are we delivering?
   * Average latency for refresh timeline
 * This helps us in understanding if we need more LBs
+
+
+## Types of System Design Questions
+1. Social Media Apps (Facebook, Insta, Twitter)
+2. Chat Apps (Whatsapp, Messenger)
+3. Streaming Apps (Youtube, Netflix)
+4. Location Apps (Restaurants, Movies, Events)
 
 
 
