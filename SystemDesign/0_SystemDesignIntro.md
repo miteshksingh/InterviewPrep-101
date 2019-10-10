@@ -64,7 +64,7 @@ Pros & Cons of different approaches keeping constraints in mind
 ### Monitoring
 
 * Collect metrics/counters like
-  * # tweets per/second, what's the daily peak?
+  * tweets per/second, what's the daily peak?
   * how many tweets per day are we delivering?
   * Average latency for refresh timeline
 * This helps us in understanding if we need more LBs
