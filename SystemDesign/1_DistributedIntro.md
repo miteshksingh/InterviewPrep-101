@@ -56,6 +56,22 @@ Goal: Helps in decresing downtime and improve developer productivity
 1. Ease & Speed of diagonising the problems
 2. Ease & Speed of making updates
 
+# Questions
+
+1. How do you improve the scalability of a system?
+A. Vertical Scaling and Horizontal Scaling (Load Balancing + Sharding)
+
+2. How do you improve the availability of a system?
+A. Adding Replicas and Active-Passive mode for each node
+
+3. How do you increase the read throughput of a system?
+A. Add a distributed cache like Cassandra
+
+4. How do you increase the consistency of a system writes?
+A.  * Keep a local copy of write data on coordinator node. If any commit fails, try with this data again
+    * Each write on a host is first kept on a commit log. Commit log can be used to recover to a state
+    * Resolve conflict on read - When the requested resource locates in A1, A2, A3, the coordinator can ask all 3 machines.
+      If by any chance the data is different, coordinator can resolve the conflict on the fly.
 
 
 
