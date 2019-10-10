@@ -39,7 +39,9 @@ Low availability (ex. fb going down) results in reputational and financial damag
 
 # Efficiency
 2 Metrics - Latency (response time) & Throughput (Bandwidth)
-Latency is the delay to obtain the first item.
+Throughput is how much work gets done per unit of time.
+Latency is the time required to complete a task or produce a result. It is the delay to obtain the first item.
+Latency and Throughput have inverse relationships.
 
 At an atomic level, why is the throughput of a distributed system decreases?
 1. Increased number of messages globally sent by the nodes of the system
