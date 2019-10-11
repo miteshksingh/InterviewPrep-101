@@ -64,6 +64,11 @@ Any object of a class if locked twice in succession would lead to deadlock.
 2. Deadlocks (Self and Cross)
 3. Resource Starvation
 
+## Prevent Deadlock
+1. Lock Ordering
+2. Lock Timeout(Preemption after random wait time)
+3. Deadlock detection
+
 ## Demos
 1. DemoMultiThreadSpeedUp
 2. DemoThreadUnsafe by thread1 - incrementing and thread2 - decrementing counter and counter != 0
