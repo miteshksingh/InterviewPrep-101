@@ -16,4 +16,5 @@ A query returns either "possible in set" or "definately not in set".
 
 * Cache Filtering - A web request url is cached only on its second request (removing on hit wonders) .
 * Counting Bllom filters - Used to delete element from bloom filters
+* Dedup in web crawler
 
