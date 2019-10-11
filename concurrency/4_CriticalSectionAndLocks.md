@@ -10,6 +10,17 @@ output changes.
 Possible Scenarios of race conditions
 * Test Then Act
 
+## Liveness
+Ability of a program to execute in a timely manner is called liveness. If a program experiences a deadlock, then it's not
+exhibiting liveness.
+
+## Live Lock
+A livelock occurs when 2 threads continously react in response to the actions by the other thread without making any real progress.
+Analogy - Two persons trying to cross each other in a hall way. Joh moves left, Arun right, block again.
+
+## Starvation
+An application thread can  experience starvation when it never gets CPU time or access to shared resources.
+
 ## Deadlocks
 Deadlocks occur when 2 or more threads aren't able to make any progress because the resource required by the first thread is help by the second
 and the resource required by the second thread is help by the first
@@ -44,21 +55,14 @@ Deadlock Scenario:
 5. T2 acquires MUTEX_B
 6. Both threads are blocked now
 
-## Liveness
-Ability of a program to execute in a timely manner is called liveness. If a program experiences a deadlock, then it's not
-exhibiting liveness.
-
-## Live Lock
-A livelock occurs when 2 threads continously react in response to the actions by the other thread without making any real progress.
-Analogy - Two persons trying to cross each other in a hall way. Joh moves left, Arun right, block again.
-
-## Starvation
-An application thread can  experience starvation when it never gets CPU time or access to shared resources.
-
+## Reentrant Lock
+It's self deadlock. It allows for re-locking or re-entering of a synchronization lock.
+Any object of a class if locked twice in succession would lead to deadlock.
 
 
 ## Demos
 1. DemoMultiThreadSpeedUp
 2. DemoThreadUnsafe by thread1 - incrementing and thread2 - decrementing counter and counter != 0
 3. DemoRaceConditon - By thread1 checking global variable (printer) and thread2 modifying global variable (modifier)
+4. DemoDeadlock - By 2 threads calling increment and decrement, increment puts lock on an object lock1, decrement on lock 2 and then nested locks
 
