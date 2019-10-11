@@ -59,6 +59,10 @@ Deadlock Scenario:
 It's self deadlock. It allows for re-locking or re-entering of a synchronization lock.
 Any object of a class if locked twice in succession would lead to deadlock.
 
+## Problems of Concurrency
+1. Race Conditions
+2. Deadlocks (Self and Cross)
+3. Resource Starvation
 
 ## Demos
 1. DemoMultiThreadSpeedUp
