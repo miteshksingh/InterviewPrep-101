@@ -72,9 +72,16 @@ Pros & Cons of different approaches keeping constraints in mind
 
 ## Types of System Design Questions
 1. Social Media Apps (Facebook, Insta, Twitter)
+   * Graph Query 
+   
 2. Chat Apps (Whatsapp, Messenger)
 3. Streaming Apps (Youtube, Netflix)
+   * Encoding
+   * Dedup
+   * Thumbnails
+   * Live Videos (UDP vs TCP)
 4. Location Apps (Restaurants, Movies, Events)
+   * Live Locations
 
 
 
