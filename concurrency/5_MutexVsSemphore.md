@@ -109,9 +109,15 @@ Therefore, semaphore can be treated as a more sophisticated structure than condi
   * the method the thread is executing has synchronized in signature
   * the thread is executing a block that is synchronized on the object on which notify, wait will be called
   * in case of a class, the thread is executing a static method which is synchronized
-* Java uses Mesa monitors(just release the monitor and it's up for grab) instead of Hoare monitors(give monitor to some specific thread), thus the while loop.
+* Java uses Mesa monitors(just release the monitor and it's up for grab) instead of Hoare monitors(give monitor to some specific thread), thus the while loop. 
 
 
+#### Semaphore vs Monitors
+A monitor and semaphore are interchangeable and theoretically, one can be constructed from another.
+
+* Monitors take care of automatically acquiring the necessary locks but with semaphore, the developer has to acquire or release locks which is error prone.
+* Semaphore is lightweight and monitors are bloated. Instead of monitors, we can use semaphore and a mutex. But it is easy to lock the wrong mutex or just forget to lock. Monitors have less dependency on developer skill.
+* 
 
 
 ## Summary
