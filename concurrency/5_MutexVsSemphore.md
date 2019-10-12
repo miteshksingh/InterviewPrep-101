@@ -39,7 +39,7 @@ But for semaphore, there's no notion of ownership.
 
 * A condition variable is generally used to avoid busy waiting(looping repeatedly while checking a condition) while waiting for a resource to become available.
 
-* Ex - If there are multiple threads that can't continue onward when the queue is empty, the busy waiting approach would be
+* Ex - Usually in a multithreaded environment, a thread needs to wait for some program predicte to be true before it can move forward. If there are multiple threads that can't continue onward when the queue is empty, the busy waiting approach would be
 ```
 while(!queue.empty()) {
  sleep(1);
@@ -84,6 +84,11 @@ If you just need mutual exclusion, then condition variables don't do anything fo
 For example, if you have a queue of items to work on, you'll have a mutex to ensure the queue's internals are consistent when accessed by the various producer and consumer threads. However, when the queue is empty, how will a consumer thread know when something is in there for it to work on? Without something like a condition variable it would need to poll the queue, taking and releasing the mutex on each poll (otherwise a producer thread could never put something on the queue).
 
 Using a condition variable lets the consumer find that when the queue is empty it can just wait on the condition variable indicating that the queue has had something put into it. No polling - that thread does nothing until a producer puts something in the queue, then signals the condition that the queue has a new item.
+
+## Monitors
+
+A monitor is a mutex and then some. 
+Monitors are generally language level constructs  whereas mutex and semaphores are OS level constructs.
 
 ## Summary
 * Mutex implies mutual exclusion and is used to serialize access to critical sections whereas 
