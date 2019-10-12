@@ -1,0 +1,8 @@
+#What tradeoffs to discuss during interview
+1. Database (SQL vs NoSQL)
+2. Blob vs File System
+    Query, Indexing, cost. SQL is not specialized for files.
+3. Indexing
+    Reads become fast but writes become slow as you have to update and sort index on every write.
+4. Normalization vs Denormalization
+    Normalization makes queries slow as multiple joins are required but saves redundant space.
