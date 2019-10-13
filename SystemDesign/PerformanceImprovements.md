@@ -2,18 +2,23 @@
 
 1. Load Balancers
 2. Have an alert framework - Fabric Alert whenever performance of a system goes down
-2. Metric Dashboards - Latency, Throughput in your code
-3. Health Checks - For all 3rd party dependency, database dependency
-4. Robus API design
+3. Metric Dashboards - Latency, Throughput in your code
+4. Health Checks - For all 3rd party dependency, database dependency
+5. Robus API design
    * API Rate Limiter
       * Ask users to space out their request (helpful in case of fire)
       * Load Shedders - Drop low priority requests like Analytics request
    * Add Versioning
    * Idempotency and Idempotency keys on the server
-5. Robust API Clients - Exponential Backoff & Jitter based retry logic on the client
-5. Caching
-6. Data Partitioning
-7. Indexes
+6. Robust API Clients - Exponential Backoff & Jitter based retry logic on the client
+7. Caching
+8. Data Partitioning
+9. Indexes
+10. Message Queues
+11. Pub/Sub Queues
+12. File Storage
+13. Replication
+14. CDN
 
 ### What if DB performance is not satisfactory?
 * Caching
