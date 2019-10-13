@@ -70,6 +70,7 @@ Goal: Helps in decresing downtime and improve developer productivity
 
 3. How do you increase the read throughput of a system?
 * Add a distributed cache like Cassandra
+* Adding replicas also increases read throughput sometimes
 
 4. How do you increase the consistency of a system writes?
 * Keep a local copy of write data on coordinator node. If any commit fails, try with this data again
