@@ -98,7 +98,8 @@ Therefore, semaphore can be treated as a more sophisticated structure than condi
 
 ## Monitors
 
-* A monitor is a mutex and one of more condition variables. They allow threads to excercise mutual exclusion as well as cooperation by allowing them to wait and signal on conditions.
+* Monitor = mutex + one of more condition variables. 
+* Allow threads to excercise mutual exclusion as well as cooperation by allowing them to wait and signal on conditions.
 * Monitors are generally language level constructs  whereas mutex and semaphores are OS level constructs.
 * Monitors has a mutex and 2 sets - Entry Set and Wait Set. Many threads first sit in entry set. One of them acquires the monitor. It either completes or gets on wait state. On wait(), it moves to wait set and another thread from entry set acquires the monitor. 
 
@@ -117,7 +118,11 @@ A monitor and semaphore are interchangeable and theoretically, one can be constr
 
 * Monitors take care of automatically acquiring the necessary locks but with semaphore, the developer has to acquire or release locks which is error prone.
 * Semaphore is lightweight and monitors are bloated. Instead of monitors, we can use semaphore and a mutex. But it is easy to lock the wrong mutex or just forget to lock. Monitors have less dependency on developer skill.
-* 
+* Java monitors enforce correct locking by throwing IllegalMonitorStateException. The exception means
+  * Either the lock was not acquired
+  * Or a wrong lock was acquired
+* A semaphore allows several thread access to a given critical section, however only a single thread at given point in time can own the monitor and access associated resource
+* Semaphores can be used to address the issue of missed signals, however with monitors additional state, called the predicate needs to be maintained to solve the issue of missed signals
 
 
 ## Summary
