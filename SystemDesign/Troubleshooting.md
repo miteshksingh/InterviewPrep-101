@@ -1,6 +1,8 @@
 What steps can you perform to troubleshoot an application?
 
-1. Get an alert from fabrics
+1. First try to reproduce the issue
+
+2. Get an alert from fabrics
 
 2. Look for external dependency failing by looking at the uniform Healthcheck API for any failing services
    It's a binary check, may be simple ping command. Checks for 2 things - whether its up and its operational
