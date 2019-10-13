@@ -24,17 +24,21 @@ Goal - Scale without performance loss
 
 
 # Reliability
-Probability a system will fail in a given time period.
-A system is reliable if it keeps delivering its services when one or several of its software/hardware components fail.
-
+* Reliability is a measure of how long an operation performs its intended function. A system is reliable if it keeps delivering its services when one or several of its software/hardware components fail.
+* It is the probability a system will fail in a given time period.
+* Reliability can be measured by Failure rate. 
+  Failure Rate = Number of failures/Total Time In Service
+  
 * How to make systems reliable?
 By redundancy of software components and data (eliminating single point of failure). 
 Ex - If a server carrying the user's shopping cart fails, another server that has the exact replica of the shopping cart should replace it.
 
 # Avaliability
-If a system is reliable, it is available. However if it's available, it is not necessarily reliable. It may be serving bad content.
-Possible to achieve high A but low R by minimizing repair time and ensuring spares come online when needed.
-Low availability (ex. fb going down) results in reputational and financial damage to the customers.
+* Availability is a measure of the % of time equipment is in an operable state.
+* Availability = Uptime/Total Time.
+* If a system is reliable, it is available. However if it's available, it is not necessarily reliable. It may be serving bad content.
+* Possible to achieve high A but low R by minimizing repair time and ensuring spares come online when needed.
+* Low availability (ex. fb going down) results in reputational and financial damage to the customers.
 
 
 # Efficiency
