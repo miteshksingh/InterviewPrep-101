@@ -1,6 +1,6 @@
 ### Components in an efficient distributed system
 
-1. Load Balancers
+1. Load Balancers (Use reverse proxy whose one of the purpose will be load balancing, can be used for caching, enryption, decryption, DDOS attack, etc)
 2. Have an alert framework - Fabric Alert whenever performance of a system goes down
 3. Metric Dashboards - Latency, Throughput in your code
 4. Health Checks - For all 3rd party dependency, database dependency
@@ -19,6 +19,7 @@
 12. File Storage
 13. Replication
 14. CDN
+15. Separate App(persistant connections, object pooling, etc) and Web servers(static content)
 
 ### What if DB performance is not satisfactory?
 * Caching
